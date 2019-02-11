@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="nl">
+
+<script src="javascript/slider.js"></script>
+<script src="javascript/automated_scroll.js"></script>
+
 	<head>
-	
+		
 		<title>Lennard Claproth</title>
 		<link rel="stylesheet" href="style_sheets/style_sheet.css">
 
 	</head>
 	
-	<body>
+	<body onload="showSlides()">
 	
 		<header>
 			<figure id="figure_header">
@@ -55,47 +60,5 @@
 		</footer>
 		
 	</body>
-	
-	<script>
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) 
-		{
-  			showSlides(slideIndex += n);
-		}
-
-		// function currentSlide(n) 
-		// {
-  		// 	showSlides(slideIndex = n);
-		// }
-
-		function showSlides(n)
-		{
-			var i;
-			var slides = document.getElementsByClassName("slide_container")
-
-			if(n > slides.length)
-			{
-				slideIndex = 1
-			}
-
-			if(n < 1)
-			{
-				slideIndex = slides.length
-			}
-
-			for(i = 0; i < slides.length; i++)
-			{
-				slides[i].style.display = "none";
-			}
-			slides[slideIndex-1].style.display = "block";
-		}
-
-		function scrollDown()
-		{
-			document.getElementById("slideshow_container").scrollIntoView({behavior: "smooth"});
-		}
-	</script>
 
 </html>
