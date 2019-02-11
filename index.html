@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+	
+		<title>Lennard Claproth</title>
+		<link rel="stylesheet" href="style_sheets/style_sheet.css">
+
+	</head>
+	
+	<body>
+	
+		<header>
+			<figure id="figure_header">
+					<img src="img_base_site/header.gif">
+			</figure>
+			<table id="table_header">
+				<tbody>
+					<tr>
+						<td><h1 id="h1_header">Lennard</h1></td>
+						<td>
+							<figure id="figure_logo">
+								<img src="img_base_site/logo.png">
+							</figure>
+						</td>
+						<td><h1 id="h1_header">Claproth</h1></td>
+						<tr>
+							<td></td>
+							<td><h1 id="h1_header">Simplicity is key</h1></td>
+							<td></td>
+						</tr>
+					</tr>
+				</tbody>
+			</table>
+			<button onClick="scrollDown()">Scroll naar beneden</button>
+		</header>
+		
+		<main>
+			<div id="slideshow_container" class="slideshow_container">
+				<div class="slide_container">
+					<figure>
+						<img src="img_base_site/random_text.png" alt="">
+					</figure>
+				</div>
+				<div class="slide_container">
+					<figure>
+						<img src="img_base_site/random_text2.png" alt="">
+					</figure>
+				</div>
+				<button onClick="plusSlides(1)">volgende</button>
+				<button onClick="plusSlides(-1)">vorige</button>
+			</div>
+		</main>
+		
+		<footer>
+		</footer>
+		
+	</body>
+	
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) 
+		{
+  			showSlides(slideIndex += n);
+		}
+
+		// function currentSlide(n) 
+		// {
+  		// 	showSlides(slideIndex = n);
+		// }
+
+		function showSlides(n)
+		{
+			var i;
+			var slides = document.getElementsByClassName("slide_container")
+
+			if(n > slides.length)
+			{
+				slideIndex = 1
+			}
+
+			if(n < 1)
+			{
+				slideIndex = slides.length
+			}
+
+			for(i = 0; i < slides.length; i++)
+			{
+				slides[i].style.display = "none";
+			}
+			slides[slideIndex-1].style.display = "block";
+		}
+
+		function scrollDown()
+		{
+			document.getElementById("slideshow_container").scrollIntoView({behavior: "smooth"});
+		}
+	</script>
+
+</html>
