@@ -45,16 +45,20 @@
 			<div id="slideshow_container" class="slideshow_container">
 				<div class="slide_container">
 					<figure id="img_slide_container">
-						<img src="img_base_site/random_text.png" alt="" id="img_slide">
+						<img src="img_base_site/random_text.png" alt="" id="img_slide" height="750px">
 					</figure>
 				</div>
-				<div class="slide_container">
+				<div class="slide_container" id="slide_container">
 					<figure id="img_slide_container">
-						<img src="img_base_site/random_text2.png" alt="" id="img_slide">
+						<img src="img_base_site/random_text2.png" alt="" id="img_slide" height="750px">
 					</figure>
 				</div>
-				<button onClick="plusSlides(1)">volgende</button>
-				<button onClick="plusSlides(-1)">vorige</button>
+				<button onClick="plusSlides(1)">&#10094;</button>
+				<button onClick="plusSlides(-1)">&#10095;</button>
+			</div>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
 			</div>
 		</main>
 		
