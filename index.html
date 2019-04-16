@@ -13,7 +13,7 @@
 
 	</head>
 	
-	<body onload="showSlides()">
+	<body onload="currentSlide(1)">
 	
 		<header>
 			<figure id="figure_header">
@@ -45,20 +45,38 @@
 			<div id="slideshow_container" class="slideshow_container">
 				<div class="slide_container">
 					<figure id="img_slide_container">
-						<img src="img_base_site/random_text.png" alt="" id="img_slide" height="750px">
+						<img src="img_base_site/random_text.png" alt="" id="img_slide" height="750px" width="900px">
 					</figure>
+					<div class="text">
+						<h1>Curriculum Vitae</h1>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
 				</div>
 				<div class="slide_container" id="slide_container">
 					<figure id="img_slide_container">
-						<img src="img_base_site/random_text2.png" alt="" id="img_slide" height="750px">
+						<img src="img_base_site/random_text2.png" alt="" id="img_slide" height="750px" width="900px">
 					</figure>
+					<div class="text">
+						<h1>Portfolio</h1>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
 				</div>
-				<button onClick="plusSlides(1)">&#10094;</button>
-				<button onClick="plusSlides(-1)">&#10095;</button>
+				<div class="slide_container" id="slide_container">
+					<figure id="img_slide_container">
+						<img src="img_base_site/random_text3.png" alt="" id="img_slide" height="750px" width="900px">
+					</figure>
+					<div class="text">
+						<h1>Contact</h1>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<button class="previous" onClick="plusSlides(-1)">&#10094;</button>
+				<button class="next" onClick="plusSlides(1)">&#10095;</button>
 			</div>
 			<div style="text-align:center">
 				<span class="dot" onclick="currentSlide(1)"></span> 
 				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
 			</div>
 		</main>
 		
