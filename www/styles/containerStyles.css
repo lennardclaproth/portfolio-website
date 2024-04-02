@@ -1,0 +1,11 @@
+.container-fluid{
+    background-color: #2d2d2a;
+    height: 100vh;
+    margin: 0;
+}
+.header-container{
+    background-color: black;
+}
+.basic-info-container{
+    position: absolute;
+}

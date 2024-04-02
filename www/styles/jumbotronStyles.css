@@ -1,0 +1,12 @@
+.header-jumbotron{
+    position: absolute;
+    width: 30vw;
+    top: 60%;
+    left: 90%;
+    transform: translate(-80%, -70%);
+    -ms-transform: translate(-80%, -70%);
+    background-color: rgba(45,45,42,0.4) ;
+    
+    /* background: none; */
+    padding: 2%;
+}

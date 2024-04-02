@@ -1,0 +1,43 @@
+.main-row{
+    height: 50%;
+}
+.main-col{
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;         /* Generic*/
+}
+.main-col:hover .body-image{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.main-col:hover .special-button > span:after{
+    width: calc(50% - 1px);
+	height: calc(100% - 2px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.main-col:hover .special-button > span:before{
+	width: calc(50% - 1px);
+	height: calc(100% - 2px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+.main-col:hover .special-button > span > span:before{
+	opacity: 1;
+	border-bottom: 1px solid #20fc8f;
+	width: calc(50%);
+	height: 1px;
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+.main-col:hover button > span > span:after{
+	opacity: 1;
+	border-bottom: 1px solid #20fc8f;
+	width: calc(50%);
+	height: 1px;
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+.main-col:hover button > span > span > span{
+	color:#20fc8f;
+}

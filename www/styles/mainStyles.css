@@ -1,0 +1,12 @@
+body{
+    margin:0;
+    background-color: #2d2d2a;
+}
+html {
+    scroll-behavior: smooth;
+}
+.main-container{
+    min-height: 30vh;
+    max-height: 90vh;
+    overflow-y: scroll;
+}

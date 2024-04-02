@@ -1,0 +1,28 @@
+.main-heading{
+    color: #20fc8f;
+}
+.second-heading{
+    color: #1ce681;
+}
+.main-paragraph{
+    color: white;
+}
+.main-divider{
+    border-color: #20fc8f;
+
+}
+.body-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: #555; */
+    color: #20fc8f;
+    /* font-size: 16px; */
+    /* padding: 12px 24px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}

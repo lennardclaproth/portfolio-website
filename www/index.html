@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">    <link rel="stylesheet" href="styles/buttonStyles.css">
+    <link rel="stylesheet" href="styles/containerStyles.css">
+    <link rel="stylesheet" href="styles/imageStyles.css">
+    <link rel="stylesheet" href="styles/jumbotronStyles.css">
+    <link rel="stylesheet" href="styles/fontStyles.css">
+    <link rel="stylesheet" href="styles/iconStyles.css">
+    <link rel="stylesheet" href="styles/rowStyles.css">
+    <link rel="stylesheet" href="styles/buttonAnimationStyles.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <link rel="stylesheet" href="styles/mainStyles.css">
+
+    <title>Lennard Claproth</title>
+  </head>
+  <body>
+    <div class="container-fluid header-container" id="header">
+        <img src="img/banner.jpg" class="img-fluid header-img" alt="Responsive image">
+        <div class="jumbotron header-jumbotron">
+            <h1 class="display-4 main-heading">Hello, world!</h1>
+            <p class="lead main-paragraph">My name is Lennard Claproth, I am a full stack software developer and student located in the Netherlands</p>
+            <hr class="my-4 main-divider">
+            <div class="d-flex justify-content-center">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='https://www.instagram.com/lennardclaproth/'"><i class="fab fa-instagram"></i></button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='https://www.linkedin.com/in/lennardclaproth'"><i class="fab fa-linkedin"></i></button>
+                </div>
+            </div>
+            <!-- <p class="lead main-paragraph"><i class="fab fa-instagram jumbo-icon"></i></p> -->
+            <button class="btn btn-primary btn-lg btn-block header-button mt-4" onclick="scrollDown('main-body')">Explore more <i class="fas fa-route ml-2"></i></button>
+        </div>
+    </div>
+
+    <div class="container-fluid main-body" id="main-body">
+        <div class="row main-row">
+            <div class="col-sm main-col p-0">
+                <button class="special-button" onclick="scrollDown('portfolio')">
+                    <span>
+                        <span>
+                            <span data-attr-span="About me">
+                                About me
+                            </span>
+                        </span>
+                    </span>
+                </button>      
+                <img src="img/laptop.jpg" class="img body-image" alt="Responsive image">
+            </div>
+            <div class="col-sm main-col p-0" style="background-color: #20fc8f">
+                
+            </div>
+            <div class="col-sm main-col p-0">
+                <button class="special-button" onclick="scrollDown('projects')">
+                    <span>
+                        <span>
+                            <span data-attr-span="Projects">
+                                Projects
+                            </span>
+                        </span>
+                    </span>
+                </button>      
+                <img src="img/code.jpg" class="img body-image" alt="Responsive image">
+            </div>
+        </div>
+        <div class="row main-row">
+            <div class="col-sm main-col p-0" style="background-color: #38423B">
+            </div>
+            <div class="col-sm main-col p-0">
+                <button class="special-button" onclick="scrollDown('curriculum_vitae')">
+                    <span>
+                        <span>
+                            <span data-attr-span="Curriculum vitae">
+                                Curriculum vitae
+                            </span>
+                        </span>
+                    </span>
+                </button>      
+                <img src="img/folder.jpg" class="img body-image" alt="Responsive image">
+            </div>
+            <div class="col-sm main-col p-0" style="background-color: #3f5e5a">
+            </div>
+        </div>
+        <div class="nav-bar-container">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" >
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="dropdown-menu main-dropdown" aria-labelledby="navbarDropdown">
+                        <button type="button" class="btn dropdown-item" onclick="scrollDown('main-body')"><i class="fas fa-home"></i></button>
+                        <button type="button" class="btn dropdown-item" onclick="scrollDown('portfolio')">Portfolio</i></button>
+                        <button type="button" class="btn dropdown-item" onclick="scrollDown('curriculum_vitae')">Curriculum Vitae</a></button>
+                        <button type="button" class="btn dropdown-item" onclick="scrollDown('projects')">Projects</a></button>                    
+                    </div>
+                </li>
+            </nav>
+            <div class="container mb-5">
+                <div class="page-header" id="portfolio">
+                    <h1 class="display-4 main-heading ">About me</h1>
+                </div>
+                <hr class="hy-4 main-divider">
+                <div class="container main-container">
+                    <p class="lead main-paragraph">
+                        My name is Lennard Claproth I am born and raised in The Hague in the Netherlands. 
+                        Since highschool I developed a passion for everything computer related. 
+                        From building computers to making websites, 
+                        from fixing operating system related issues to making robots with a raspberry pi. 
+                        I have always had a great affinity with computers and I am happy that I can earn money with my passion.</p>
+                    <p class="lead main-paragraph">
+                        Since a year I have been working as a junior software developer. 
+                        This helped me with developing better developing skills as I am a kinesthetic learner. 
+                        Besides my current work I am currently working with a friend of mine to set up a company for the development of software solutions.
+                    </p>
+                    <p class="lead main-paragraph"> 
+                        The programming/scripting languages/frameworks which I love the most at the current moment are 
+                        <i class="fab fa-python mr-2"></i><i class="fab fa-vuejs mr-2"></i><i class="fab fa-js-square mr-2"></i><i class="fab fa-java mr-2"></i><i class="fab fa-sass mr-2"></i>
+                    </p>
+                    <p class="lead main-paragraph">You can contact me on my email address: lennardclaproth@gmail.com <br />or via a phonecall to +31643244747</p>
+                </div>
+                <hr class="hy-4 main-divider">
+            </div>
+            <div class="container mt-5 mb-5" id="curriculum_vitae">
+                <div class="page-header">
+                    <h1  class="display-4 main-heading ">Curriculum vitae</h1>
+                </div>
+                <ul class="timeline">
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="second-heading">Co-founder Envize</h4>
+                            <p class="main-paragraph">03/2021 - to date<i class="fas fa-clock ml-2"></i></p>
+                            <hr class="hy-4 main-divider" />
+                        </div>
+                        <div class="timeline-body">
+                            <p class="main-paragraph">Envize V.O.F.</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="second-heading">Junior software developer</h4>
+                            <p class="main-paragraph">07/2019 - to date<i class="fas fa-clock ml-2"></i></p>
+                            <hr class="hy-4 main-divider" />
+                        </div>
+                        <div class="timeline-body">
+                            <p class="main-paragraph">Serviceheroes B.V.</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="second-heading">Number portability specialist</h4>
+                            <p class="main-paragraph">12/2015 – 07-2019 <i class="fas fa-clock ml-2"></i></p>
+                            <hr class="hy-4 main-divider" />
+                        </div>
+                        <div class="timeline-body">
+                            <p class="main-paragraph">PortingXS</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="second-heading">Student informatica</h4>
+                            <p class="main-paragraph">09/2017 - to date<i class="fas fa-clock ml-2"></i></p>
+                            <hr class="hy-4 main-divider" />
+                        </div>
+                        <div class="timeline-body">
+                            <p class="main-paragraph">University of applied science of Rotterdam</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="second-heading">Verkoopklaar medewerker</h4>
+                            <p class="main-paragraph">01/2012 – 06-2016 <i class="fas fa-clock ml-2"></i></p>
+                            <hr class="hy-4 main-divider" />
+                        </div>
+                        <div class="timeline-body">
+                            <p class="main-paragraph">Albert Heijn   </p>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <p class="main-paragraph">09/2009 - 06/2015<i class="fas fa-clock ml-2"></i></p>
+                            <hr class="hy-4 main-divider" />
+                        </div>
+                        <div class="timeline-body">
+                            <p class="main-paragraph">Segbroek College The Hague</p>
+                        </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary mr-3"><a href="/files/curriculum_vitae.pdf" download><i class="fas fa-download mr-2"></i>Download traditional CV</a></button>
+                </div>
+                <hr class="hy-4 main-divider">
+            </div>
+            <div class="container mt-5 mb-5">
+                <div class="page-header">
+                    <h1  class="display-4 main-heading "id="projects" >Projects</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 my-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">The bike</h5>
+                          <p class="card-text">An application for building mongo/rest sequences in JSON</p>
+                          <button class="btn btn-primary" onclick="window.location.href='https://github.com/lennardclaproth/theBike'"><i class="fab fa-github"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 my-3" >
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">The mindhouse</h5>
+                          <p class="card-text">An application for generating templates based on JSON</p>
+                          <button class="btn btn-primary" onclick="window.location.href='https://github.com/lennardclaproth/mindHouse'"><i class="fab fa-github"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 my-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">nacks</h5>
+                            <p class="card-text">An application for requesting nack files from with ftp from a server and sort them based on contents.</p>
+                            <button class="btn btn-primary" onclick="window.location.href='https://github.com/lennardclaproth/nacks'"><i class="fab fa-github"></i></button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 my-3">
+                        <div class="card">
+                          <div class="card-body">
+                                <h5 class="card-title">ThuisBegymmen</h5>
+                                <p class="card-text">A basic webshop with a .net backend and a react frontend</p>
+                                <button class="btn btn-primary" onclick="window.location.href='https://github.com/lennardclaproth/ThuisBegymmen'"><i class="fab fa-github"></i></button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

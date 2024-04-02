@@ -1,0 +1,6 @@
+Base: #2d2d2a
+Accent1: #353831
+Accent2: #38423B
+Additional1: #3f5e5a
+Additional1-shade1: #1ce681;
+Additional2: #20fc8f

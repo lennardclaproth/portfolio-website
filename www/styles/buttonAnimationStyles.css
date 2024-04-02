@@ -1,0 +1,87 @@
+.special-button{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-80%, -70%);
+    -ms-transform: translate(-80%, -70%);
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	color:#20fc8f;
+	width: 250px;
+	height:50px;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	z-index: 10;
+}
+.special-button > span:after{
+	content:'';
+	position: absolute;
+	top:0;
+	left: 50%;
+	width: 20px;
+	height: 0;
+	
+	border: 1px solid #20fc8f;
+	border-left: none;
+	border-bottom: none;
+	
+	    transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+.special-button span{
+	display: block;
+	position: relative;
+	line-height: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.special-button > span:before{
+	content:'';
+	position: absolute;
+	top:0;
+	right: 50%;
+	width: 20px;
+	height: 0;
+	
+	border: 1px solid #20fc8f;
+	border-right: none;
+	border-bottom: none;
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+.special-button > span > span:before{
+	content:'';
+	position: absolute;
+	bottom:0;
+	right: 0%;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+.special-button > span > span > span:after{
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	color:#1f2e4d;
+	content: attr(data-attr-span);
+	width: 0%;
+	height: 100%;
+	background:#20fc8f;
+	white-space: nowrap;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	transition: width 0.2s;
+}
+.special-button:hover > span > span > span:after{
+	width: 100%;
+}
+.special-button:active{
+    border:none;
+}
+.special-button:focus{
+    border:none;
+    outline: none;
+}
